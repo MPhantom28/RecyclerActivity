@@ -27,6 +27,7 @@ class NumberDisplayAdapter(private val items: Array<Int>) : RecyclerView.Adapter
         position: Int
     ) {
         holder.textView.text = items[position].toString()
+        holder.textView.textSize = items[position].toFloat()
     }
 
     override fun getItemCount() = items.size
